@@ -6,12 +6,21 @@ GET http://localhost:5000/api/v1/bootcamps/1
 content-type: application/json
 ###
 
-POST http://localhost:5000/api/v1/bootcamps
+POST http://localhost:5000/api/v1/bootcamps HTTP/1.1
 content-type: application/json
 
 {
-    "name": "sample",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+    "name": "Devworks Bootcamp",
+	"description": "Devworks is a full stack JavaScript Bootcamp located in the heart of Boston that focuses on the technologies you need to get a high paying job as a web developer",
+	"website": "https://devworks.com",
+	"phone": "(111) 111-1111",
+	"email": "enroll@devworks.com",
+	"address": "233 Bay State Rd Boston MA 02215",
+	"careers": ["Web Development", "UI/UX", "Business"],
+	"housing": true,
+	"jobAssistance": true,
+	"jobGuarantee": false,
+	"acceptGi": true
 }
 
 ###
