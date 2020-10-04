@@ -1,4 +1,5 @@
 [
+	
 	{
 		"_id": "5d7a514b5d2c12c7449be042",
 		"name": "Admin Account",
@@ -18,6 +19,13 @@
 		"name": "User Account",
 		"email": "user@gmail.com",
 		"role": "user",
+		"password": "123456"
+	},
+	{
+		"_id": "5d7a514b5d2c12c7449be066",
+		"name": "Roberto de Souza",
+		"email": "test@gmail.com",
+		"role": "publisher",
 		"password": "123456"
 	},
 	{
