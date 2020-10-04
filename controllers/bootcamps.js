@@ -16,10 +16,10 @@ exports.getBootcamp = (req, res, next) => {
     .json({ success: true, msg: `Get bootcamps ${req.params.id}` });
 };
 
-// @desc    Create new bootcamps
+// @desc    Create new bootcamp
 // @route   Post /api/v1/bootcamps
 // @access  Private
-exports.createBootcamp = async (req, res, next) => {
+exports.createBootcamp = async (req, res, next) => {  
   try {
     const bootcamp = await Bootcamp.create(req.body);
     res.status(201).json({
@@ -31,7 +31,7 @@ exports.createBootcamp = async (req, res, next) => {
   }
 };
 
-// @desc    Update bootcamps
+// @desc    Update bootcamp
 // @route   PUT /api/v1/bootcamps/:id
 // @access  Private
 exports.updateBootcamp = (req, res, next) => {
